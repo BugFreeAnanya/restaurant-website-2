@@ -1,0 +1,42 @@
+body {
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: blue;
+}
+a {
+    float: left;
+    color: rgb(228, 224, 232);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover {
+    background-color: aqua;
+    color: blueviolet;
+}
+.active {
+    background-color: greenyellow;
+    color: skyblue;
+}
+h1 {
+    text-align: center;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:beige;
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+}

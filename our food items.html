@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our food items</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            color: black;
+            text-align: center;
+        }
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>OUR FOOD ITEMS</h1>
+    <div>
+        <img class="my_slides" src="https://media.istockphoto.com/id/1460788317/photo/south-indian-vegetarian-breakfast.jpg?s=612x612&w=0&k=20&c=uWbKr62yUQ4xf7_rzfEjEq1ELk-vYyO1obLTvd6E-3s=" style="width: 
+        300px; height: 300px; margin-left: 36%;">
+        <img class="my_slides"
+            src="https://sachfoods.com/cdn/shop/articles/MultipleKulchaShot.jpg?v=1667151236"
+            style="width: 
+                300px; height: 300px; margin-left: 36%;">
+                <img class="my_slides"
+                    src="https://www.shutterstock.com/image-photo/chole-bhature-popular-indian-dish-600nw-2673296921.jpg"
+                    style="width: 
+                        300px; height: 300px; margin-left: 36%;">
+    </div>
+
+   <script>
+    var index = 0
+    function carousel() {
+        var i 
+        var x=document.getElementsByClassName("my_slides")
+
+        for(i = 0; i < x.length; i++) {
+            x[i].style.display="none"
+        }
+        index++
+        if(index > x.length) {
+            index = 1
+        }
+        x[index - 1].style.display="block"
+        setTimeout(carousel, 2000)
+    }
+    carousel()
+   </script>
+</body>
+</html>
